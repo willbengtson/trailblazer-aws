@@ -1,0 +1,16 @@
+log_level: DEBUG
+
+botocore_document_json_path: PATH_TO_BOTOCORE_DATA_DIR
+
+account_number: ACCOUNT_NUMBER
+account_role: trailblazer
+
+attack_chain:
+  - call: sts.get_caller_identity
+    time_delay: 2
+  - call: cloudtrail.describe_trails
+    time_delay: 1
+  - call: s3.list_buckets
+    time_delay: 3
+  - call: ec2.describe_instances
+    time_delay: 3
