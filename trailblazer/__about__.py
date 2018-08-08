@@ -9,7 +9,7 @@ __title__ = 'trailblazer-aws'
 __summary__ = ('Blazing Cloudtrail since 2018')
 __uri__ = 'https://github.com/willbengtson/trailblazer-aws'
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 __author__ = 'Will Bengtson'
 __email__ = 'william.bengtson@gmail.com'
